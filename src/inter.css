@@ -1,0 +1,341 @@
+*
+{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.shadow
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    margin-top: -100px;
+    z-index: -5;
+    margin-top: -100px;
+}
+
+body
+{
+    background-image: url('../img/skrt.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main
+{
+    width: 15%;
+    float: left;
+}
+
+aside
+{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+body
+{
+    background-color: #ddd;
+    font-family: 'Muli', sans-serif;
+}
+
+/* Editing heading */
+#head
+{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-size: 40px;
+    color: white;
+}
+
+/* Editing Prices */
+.mill
+{
+    border: 2px solid orange;
+    margin: 14px 0px 14px 10px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 97px;
+    color: whitesmoke;
+}
+
+/* Editing whole money bar */
+#monay
+{
+    margin-top: -20px;
+}
+
+/* Round Styling */
+#round
+{
+    border: 2px solid orange;
+    margin: 0 auto;
+/* with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not */
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Question and answer */
+.question
+{
+    font-size: 24px;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#ansz
+{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+}
+
+
+#butz
+{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;  
+    margin-top: 20px; 
+}
+
+#butz:hover
+{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+
+.time
+{
+    text-align: left;
+    border: 2px solid black;
+    max-width: 100px;
+    margin: auto;
+    padding: 39px 75px 33px 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transform: translate(12%, 20%);
+    border-radius: 100px;
+    background-image: url('https://i.ytimg.com/vi/8tAXbkGR_-c/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 185px;
+    background-position-x: 50%;
+    background-position-y: 45%;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    float: right;
+}
+
+/* Bank */
+.bank
+{
+    margin: auto;
+    border: 2px solid wheat;
+    border-radius: 80px;
+    max-width: 80%;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-image: url('http://bestanimations.com/Money/Dollars/dollar-sign-symbol-24.gif');
+    background-size: 80px;
+    background-position-x: -15px;
+    /* margin-left: 50px; */
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+
+/* Start Button */
+.start > button
+{
+   /* Using width with text-align center makes button centered even in responsive areas */
+    width:15%;
+    margin:0 auto;
+    text-align:center;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mont
+{
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.start > button:hover
+{
+    background-color: lightgray;
+}
+
+.greenColor
+{
+    background-color: #2fde26;
+}
+
+/* Scale makes the box of the text thinner and thicker Ex. scale(2,3) would have a scale of 2 in x-axis and scale of 3 in y-axis */
+#round
+{
+    /* transition: 1s all ease-in-out; */
+    /* transform: skew(360deg); */
+    /* transform: rotate(360deg); */
+}
+
+.tries
+{
+    color: red;
+    margin: 0 auto;
+    font-size: 10em;
+    font-weight: bold;
+    margin-top: -40px;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.tries > ul li
+{
+    flex-basis: 50%;
+}
+
+.one, .two, .thr
+{
+    visibility: hidden;
+}
+
+@media(max-width: 1020px)
+{
+
+    #head
+    {
+        margin: 20px 0px 20px 40px;
+        font-size: 30px;
+    }
+
+    .question
+    {
+        font-size: 20px;
+        margin-left: 70px;
+    }
+    
+    #ansz
+    {
+        margin-top: -25px;
+        margin-left: 60px;
+    }
+    
+    .time
+    {
+        margin: 0 auto;
+        margin-top: 4px;
+    }
+
+    .mont
+    {
+        width: 100%;
+    }
+}
+
+@media(max-width: 535px)
+{
+   
+    .time
+    {
+        float: left;
+        margin-left: 148px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+
+    #head
+    {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    #round
+    {
+        margin-top: -10px;
+    }
+
+    #butz
+    {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 7px;
+    }
+
+    #monay
+    {
+        margin-top: -10px;
+    }
+
+    .start > button
+    {
+        width: 50%;
+    }
+
+    .bank
+    {
+        padding: 0px;
+        border-radius: 0px;
+        margin-top: 40px;
+        margin-left: 75px;
+    }
+
+    .time
+    {
+        margin-top: -60px;
+    }
+
+    .shadow
+    {
+        height: 112%;
+    }
+
+    .tries
+    {
+        margin-top: 120px;
+    }
+
+}
+
+
+@media(max-width: 700px)
+{
+    .tries
+    {
+        font-size: 5em;
+    }
+}
+
+

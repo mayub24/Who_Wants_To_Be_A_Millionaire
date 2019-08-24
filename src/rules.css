@@ -1,0 +1,12 @@
+.container
+{
+    width: 75%;
+    margin: auto;
+}
+
+#butnz
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
