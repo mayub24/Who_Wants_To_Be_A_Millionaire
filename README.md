@@ -5,7 +5,7 @@ Created a game show in which the user has to answer a set of randomly generated 
 - [x] ES6 Classes
 - [x] Functions
 - [x] CSS Grid
-- [x] DOM Manupulation
+- [x] DOM Manipulation
 - [x] Arrays
 - [x] Random Generated Values for Buttons
 - [x] CSS Responsiveness
