@@ -1,0 +1,29 @@
+img
+{
+    margin: auto;
+    display: block; /* This is important to centering images */
+}
+
+#butnz
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+
+button
+{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+@media(max-width:786px)
+{
+    img
+    {
+        height: 280px;
+    }
+
+}
